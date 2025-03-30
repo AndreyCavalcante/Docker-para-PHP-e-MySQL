@@ -21,7 +21,7 @@ Certifique-se de que os seguintes softwares estão instalados:
 1. **Clone este repositório:**
 
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/AndreyCavalcante/Docker-para-PHP-e-MySQL.git
    cd nome-do-repositorio
    ```
 
