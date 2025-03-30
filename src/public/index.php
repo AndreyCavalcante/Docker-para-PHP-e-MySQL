@@ -3,7 +3,7 @@
 
     use Steampixel\Route;
 
-    define('VIEWS_PATH', __DIR__ . '/../views');
+    define('VIEWS_PATH', __DIR__ . '/../Views');
 
     Route::add('/', function () {
         require VIEWS_PATH . '/index.php';
