@@ -34,8 +34,13 @@ Certifique-se de que os seguintes softwares estão instalados:
    DB_PASS=sua_senha
    DB_NAME=seu_banco
    ```
+3. **Instale as dependencias do projeto:**
 
-3. **Construa e inicie os containers:**
+   ```sh
+   composer install
+   ```
+
+4. **Construa e inicie os containers:**
 
    ```sh
    docker-compose up -d --build
