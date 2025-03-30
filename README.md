@@ -1,45 +1,61 @@
-Docker para aplicação com PHP, MySQL e PHPMyAdmin
+# Docker para Aplicação com PHP, MySQL e PHPMyAdmin
 
 Este projeto utiliza Docker para configurar um ambiente de desenvolvimento com PHP, MySQL e PHPMyAdmin.
 
+## Tecnologias Utilizadas
 
-Tecnologias:
+- **PHP 8.2** (com Apache)
+- **MySQL**
+- **PHPMyAdmin**
+- **Docker** (usado para containerização)
 
-PHP 8.2 (com Apache)
-MySQL
-PHPMyAdmin
-Docker (usado para containerização)
+## Pré-requisitos
 
-
-Pré-requisitos
 Certifique-se de que os seguintes softwares estão instalados:
 
-Docker: Link para instalar o Docker
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-Docker Compose: Link para instalar o Docker Compose
+## Instalação
 
+1. **Clone este repositório:**
 
-Instalação
-Clone este repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
+   ```
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+2. **Crie um arquivo **`` com as variáveis de ambiente para o banco de dados:
 
-Crie um arquivo .env com as variáveis de ambiente para o banco de dados:
+   ```env
+   DB_HOST=db
+   DB_USER=seu_usuario
+   DB_PASS=sua_senha
+   DB_NAME=seu_banco
+   ```
 
-DB_HOST= coloque o host do seu banco, nesse caso use "db"
-DB_USER= coloque um nome para o usuário
-DB_PASS= defina uma senha que será usada no banco
-DB_NAME= defina o nome do banco
+3. **Construa e inicie os containers:**
 
+   ```sh
+   docker-compose up -d --build
+   ```
 
-Construa e inicie os containers:
+   O Docker Compose irá construir as imagens e iniciar os containers necessários:
 
-docker-compose up -d --build
-O Docker Compose irá construir as imagens e iniciar os containers necessários: php_app, mysql_db_test e phpmyadmin.
+   - **php\_app** (Aplicação PHP)
+   - **mysql\_db\_test** (Banco de dados MySQL)
+   - **phpmyadmin** (Interface gráfica para o banco de dados)
 
-Acesse sua aplicação:
+## Acessando a Aplicação
 
-PHP Application: http://localhost:8000
+- **Aplicação PHP:** [http://localhost:8000](http://localhost:8000)
+- **PHPMyAdmin:** [http://localhost:8080](http://localhost:8080)
+  - **Usuário:** `admin`
+  - **Senha:** `admin`
 
-PHPMyAdmin: http://localhost:8080 (usuario: admin, senha: admin)
+Caso precise modificar as credenciais, altere o arquivo `.env` antes de iniciar os containers.
+
+---
+
+🚀 Agora seu ambiente está pronto para desenvolvimento!
+

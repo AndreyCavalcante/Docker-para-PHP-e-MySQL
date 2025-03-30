@@ -1,2 +1,4 @@
 .env
 /vendor
+/src/logs/php_error.log
+/src/logs/php_errors.log
