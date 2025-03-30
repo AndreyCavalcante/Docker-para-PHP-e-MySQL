@@ -1,0 +1,8 @@
+[30-Mar-2025 16:33:02 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /var/www/html/src/views/index.php:10
+Stack trace:
+#0 /var/www/html/src/public/index.php(9): require()
+#1 [internal function]: {closure}()
+#2 /var/www/html/vendor/steampixel/simple-php-router/src/Steampixel/Route.php(103): call_user_func_array(Object(Closure), Array)
+#3 /var/www/html/src/public/index.php(13): Steampixel\Route::run('')
+#4 {main}
+  thrown in /var/www/html/src/views/index.php on line 10

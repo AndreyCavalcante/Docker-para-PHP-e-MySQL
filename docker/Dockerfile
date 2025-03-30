@@ -12,8 +12,10 @@ WORKDIR /var/www/html
 # Copiar os arquivos da aplicação
 COPY ./src /var/www/html
 
-# Criar diretórios de log
-RUN mkdir -p /var/www/html/logs && chown -R www-data:www-data /var/www/html/logs
+# Criar diretório de logs e configurar permissões corretamente
+RUN mkdir -p /var/www/html/logs && \
+    chown -R www-data:www-data /var/www/html/logs && \
+    chmod -R 777 /var/www/html/logs
 
 # Configurar logs do Apache
 RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
@@ -28,11 +30,7 @@ COPY ./docker/000-default.conf /etc/apache2/sites-available/000-default.conf
 # Ativar o site configurado
 RUN a2ensite 000-default.conf
 
-RUN mkdir -p /var/www/html/logs && \
-    chown -R www-data:www-data /var/www/html/logs && \
-    chmod -R 777 /var/www/html/logs
-
-# Instalar composer
+# Instalar Composer de forma segura
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Expor porta do Apache
