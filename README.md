@@ -21,9 +21,10 @@ Certifique-se de que os seguintes softwares estão instalados:
 1. **Clone este repositório:**
 
    ```sh
-   git clone https://github.com/AndreyCavalcante/Docker-para-PHP-e-MySQL.git
-   cd nome-do-repositorio
+   git clone https://github.com/AndreyCavalcante/Docker-para-PHP-e-MySQL.git <nome_repositorio>
+   cd <nome_repositorio>
    ```
+   - Substitua <nome_repositorio> para o nome do projeto desejado
 
 2. **Crie um arquivo **`` com as variáveis de ambiente para o banco de dados:
 
