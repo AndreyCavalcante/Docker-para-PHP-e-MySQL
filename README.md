@@ -21,9 +21,10 @@ Certifique-se de que os seguintes softwares estão instalados:
 1. **Clone este repositório:**
 
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/AndreyCavalcante/Docker-para-PHP-e-MySQL.git <nome_repositorio>
+   cd <nome_repositorio>
    ```
+   - Substitua <nome_repositorio> para o nome do projeto desejado
 
 2. **Crie um arquivo **`` com as variáveis de ambiente para o banco de dados:
 
@@ -42,16 +43,16 @@ Certifique-se de que os seguintes softwares estão instalados:
 
    O Docker Compose irá construir as imagens e iniciar os containers necessários:
 
-   - **php\_app** (Aplicação PHP)
-   - **mysql\_db\_test** (Banco de dados MySQL)
+   - **App** (Aplicação PHP)
+   - **mysql\_db** (Banco de dados MySQL)
    - **phpmyadmin** (Interface gráfica para o banco de dados)
 
 ## Acessando a Aplicação
 
 - **Aplicação PHP:** [http://localhost:8000](http://localhost:8000)
 - **PHPMyAdmin:** [http://localhost:8080](http://localhost:8080)
-  - **Usuário:** `admin`
-  - **Senha:** `admin`
+  - **Usuário:** `user passado no .env`
+  - **Senha:** `senha passada no.env`
 
 Caso precise modificar as credenciais, altere o arquivo `.env` antes de iniciar os containers.
 
