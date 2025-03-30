@@ -26,7 +26,7 @@ Certifique-se de que os seguintes softwares estão instalados:
    ```
    - Substitua <nome_repositorio> para o nome do projeto desejado
 
-2. **Crie um arquivo** com as variáveis de ambiente para o banco de dados:
+2. **Crie um arquivo** com as variáveis de ambiente para o banco de dados, seguindo o arquivo .env.example:
 
    ```env
    DB_HOST=db
