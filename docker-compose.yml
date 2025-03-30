@@ -20,7 +20,7 @@ services:
       DB_NAME: ${DB_NAME}
 
   db:
-    container_name: mysql_db_test
+    container_name: mysql_db
     image: mysql:latest
     restart: always
     environment:
