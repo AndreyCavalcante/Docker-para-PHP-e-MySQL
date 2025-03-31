@@ -1,4 +1,4 @@
 .env
 /vendor
-/src/logs/php_error.log
-!src/logs/.gitignore
+/logs/php_error.log
+!/logs/.gitignore
