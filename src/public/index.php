@@ -4,6 +4,7 @@
     use Steampixel\Route;
 
     define('VIEWS_PATH', __DIR__ . '/../Views');
+    define('INC_PATH', __DIR__ . '/../Includes');
 
     Route::add('/', function () {
         require VIEWS_PATH . '/index.php';
