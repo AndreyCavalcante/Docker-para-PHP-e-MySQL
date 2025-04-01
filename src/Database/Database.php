@@ -1,5 +1,9 @@
 <?php
 
+    #Arquivo de conexão com o banco de dados
+    #Esse arquivo é apenas para exemplo, pode ser modificado como quiser
+    #O exemplo foi feito em mysqli, mas pode ser substituído por PDO
+
 namespace App\Database;
 
 class Database{

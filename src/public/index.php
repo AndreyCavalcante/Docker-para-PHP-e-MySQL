@@ -1,4 +1,9 @@
 <?php
+
+    #Arquivo principal do projeto
+    #Onde ficam as rotas do projeto
+    #Adicione mais rotas caso for preciso
+
     require_once __DIR__ . '/../../vendor/autoload.php';
 
     use Steampixel\Route;

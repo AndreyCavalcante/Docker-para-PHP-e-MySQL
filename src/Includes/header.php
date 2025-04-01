@@ -1,4 +1,9 @@
 <?php
+
+    #Esse é o arquivo de Header do projeto
+    #Esse arquivo pode ser editado
+    #Arquivo de import de css do Bootstrap
+
     $title;
 
     if($_SERVER['REQUEST_URI'] == '/'){

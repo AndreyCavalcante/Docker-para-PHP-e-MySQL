@@ -1,4 +1,8 @@
 <?php
+
+    #Esse é o arquivo de exemplo de classes
+    #Arquivo para manipulação de usuários
+
     namespace App\Lib;
 
     use App\Database\Database;
