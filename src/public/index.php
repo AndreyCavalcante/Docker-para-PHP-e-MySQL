@@ -10,5 +10,10 @@
         exit;
     }, ['get', 'post']);
 
+    Route::add('/About', function () {
+        require VIEWS_PATH . '/about.php';
+        exit;
+    }, ['get', 'post']);
+
     Route::run('/');
 ?>

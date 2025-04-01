@@ -13,8 +13,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <a href="/About">Sobre</a><br>
+        <h1>Sobre</h1>
         <?echo $userData['name'];?>
     </body>
 </html>
