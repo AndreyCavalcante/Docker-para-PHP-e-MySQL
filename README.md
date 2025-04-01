@@ -65,8 +65,8 @@ Caso precise modificar as credenciais, altere o arquivo `.env` antes de iniciar 
 
 ## Observações
 
-  -**Bootstrap:** O Bootstrap já está incluso no projeto
-  -**Dependências:** Algumas dependências do projeto podem ser diferentes de acordo com o sistema operacional
+  -**Bootstrap:** O Bootstrap já está incluso no projeto.
+  -**Dependências:** Algumas dependências do projeto podem ser diferentes de acordo com o sistema operacional.
 
 🚀 Agora seu ambiente está pronto para desenvolvimento!
 
